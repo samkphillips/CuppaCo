@@ -12,7 +12,7 @@
 
 **_Description_**
 
-Cuppa Co will be a coffee journalling website where users can create accounts, journal their coffee escapades, and (maybe someday) find recommendations for new coffee and coffee paraphenelia.
+Cuppa Co will be a coffee journalling website where users can find roasts, journal their coffee escapades, and (maybe someday) find recommendations for new coffee and coffee paraphenelia.
 
 ---
 
@@ -45,6 +45,8 @@ Everything
 ---
 
 **_Planning_**
+
+Planning and development was managed on [Trello](https://trello.com/b/S6t1W12N/cuppaco)
 
 #### Component Heirarchy Diagram
 
