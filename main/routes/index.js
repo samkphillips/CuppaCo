@@ -14,4 +14,8 @@ router.post('/roasts', controllers.addRoast)
 
 router.post('/brews', controllers.addBrew)
 
+router.delete('/roasts/:id', controllers.deleteRoast)
+
+router.delete('/brews/:id', controllers.deleteBrew)
+
 module.exports = router

@@ -48,10 +48,38 @@ const addBrew = async (req, res) => {
   }
 }
 
+const deleteRoast = async (req, res) => {
+  try {
+    await Brew.deleteMany({ roastID: req.params.id })
+    const deleted = await Roast.deleteOne({ _id: req.params.id })
+    if (deleted) {
+      return res.status(200).send('Roast deleted')
+    }
+    throw new Error('Roast not found')
+  } catch (error) {
+    return res.status(500).send(error.message)
+  }
+}
+
+const deleteBrew = async (req, res) => {
+  try {
+    const { id } = req.params
+    const deleted = await Brew.findByIdAndDelete(id)
+    if (deleted) {
+      return res.status(200).send('Brew deleted')
+    }
+    throw new Error('Brew not found')
+  } catch (error) {
+    return res.status(500).send(error.message)
+  }
+}
+
 module.exports = {
   getAllRoasts,
   getAllBrews,
   getBrewsByRoastID,
   addRoast,
-  addBrew
+  addBrew,
+  deleteRoast,
+  deleteBrew
 }
