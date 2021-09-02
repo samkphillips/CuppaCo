@@ -2,3 +2,24 @@
   margin: 0;
   padding: 0;
 }
+
+header {
+  padding: 0 20px;
+  height: 70px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #604133;
+  color: #ead4bc;
+}
+
+.navlinks {
+  margin: 10px;
+  text-decoration: none;
+  color: #ead4bc;
+}
+
+.navlinks:hover {
+  text-decoration: underline;
+}
