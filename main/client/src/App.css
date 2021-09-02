@@ -14,7 +14,8 @@ header {
   color: #ead4bc;
 }
 
-.home-page {
+.home-page,
+.about-page {
   height: calc(100vh - 70px);
   min-height: 500px;
   width: 100vw;
@@ -26,7 +27,8 @@ header {
   color: #604133;
 }
 
-.home-page > p {
+.home-page > p,
+.about-page > p {
   width: 60%;
   min-width: 400px;
   text-align: center;
