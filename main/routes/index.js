@@ -10,4 +10,8 @@ router.get('/brews', controllers.getAllBrews)
 
 router.get('/brews/:id', controllers.getBrewsByRoastID)
 
+router.post('/roasts', controllers.addRoast)
+
+router.post('/brews', controllers.addBrew)
+
 module.exports = router

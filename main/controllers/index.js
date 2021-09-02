@@ -28,8 +28,30 @@ const getBrewsByRoastID = async (req, res) => {
   }
 }
 
+const addRoast = async (req, res) => {
+  try {
+    const roast = await new Roast(req.body)
+    await roast.save()
+    return res.status(201).json({ roast })
+  } catch (error) {
+    return res.status(500).send(error.message)
+  }
+}
+
+const addBrew = async (req, res) => {
+  try {
+    const brew = await new Brew(req.body)
+    await brew.save()
+    return res.status(201).json({ brew })
+  } catch (error) {
+    return res.status(500).send(error.message)
+  }
+}
+
 module.exports = {
   getAllRoasts,
   getAllBrews,
-  getBrewsByRoastID
+  getBrewsByRoastID,
+  addRoast,
+  addBrew
 }

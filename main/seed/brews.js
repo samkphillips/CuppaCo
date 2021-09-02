@@ -64,7 +64,7 @@ const main = async () => {
       preppedWith: 'Splash of Cream',
       aromaNotes: 'Nutty and slight chocolate',
       flavorNotes:
-        'The true neutral of coffess. Not particularly exciting but definitely drinkable.',
+        'The true neutral of coffees. Not particularly exciting but definitely drinkable.',
       rating: 6,
       roastID: pike[0]._id
     }
