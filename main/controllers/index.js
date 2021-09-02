@@ -20,9 +20,6 @@ const getAllBrews = async (req, res) => {
 
 const getBrewsByRoastID = async (req, res) => {
   try {
-    // const allBrews = await Brew.find()
-
-    // let outputBrews = allBrews.filter((b) => b.roastID === req.params.id)
     let outputBrews = await Brew.find({ roastID: req.params.id })
 
     return res.status(200).json({ outputBrews })
