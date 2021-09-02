@@ -8,4 +8,6 @@ router.get('/roasts', controllers.getAllRoasts)
 
 router.get('/brews', controllers.getAllBrews)
 
+router.get('/brews/:id', controllers.getBrewsByRoastID)
+
 module.exports = router
