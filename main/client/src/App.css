@@ -15,7 +15,8 @@ header {
 }
 
 .home-page,
-.about-page {
+.about-page,
+.shop-page {
   height: calc(100vh - 70px);
   min-height: 500px;
   width: 100vw;
@@ -28,13 +29,19 @@ header {
 }
 
 .home-page > p,
-.about-page > p {
+.about-page > p,
+.shop-page > p {
   width: 60%;
   min-width: 400px;
   text-align: center;
   border: 1px solid #604133;
   padding: 10px;
   border-radius: 10px;
+}
+
+.shop-page > p {
+  border: 3px solid #9ea6a2;
+  background-color: #b6dcdc;
 }
 
 .navlinks {
