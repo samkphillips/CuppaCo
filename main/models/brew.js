@@ -3,15 +3,15 @@ const Schema = mongoose.Schema
 
 const Brew = new Schema(
   {
-    author_name: { type: String, required: true },
+    authorName: { type: String, required: true },
     date: { type: Date, required: true },
-    drank_at: { type: String, required: true },
-    brew_method: { type: String, required: true },
-    prepped_with: { type: String, required: true },
-    aroma_notes: { type: String, required: true },
-    flavor_notes: { type: String, required: true },
+    drankAt: { type: String, required: true },
+    brewMethod: { type: String, required: true },
+    preppedWith: { type: String, required: true },
+    aromaNotes: { type: String, required: true },
+    flavorNotes: { type: String, required: true },
     rating: { type: Number, required: true },
-    roast_id: { type: Schema.Types.ObjectId, ref: 'roast_id' }
+    roastID: { type: Schema.Types.ObjectId, ref: 'roastID' }
   },
   { timestamps: true }
 )
