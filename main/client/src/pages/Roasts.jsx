@@ -1,6 +1,7 @@
 import React from 'react'
 import { Route, Switch, NavLink, useRouteMatch } from 'react-router-dom'
 import RoastNav from '../components/RoastNav'
+import AllRoasts from './subpages/AllRoasts'
 
 const Roasts = () => {
   let { path, url } = useRouteMatch()
@@ -14,9 +15,7 @@ const Roasts = () => {
       </div>
       
       <Switch>
-        <Route exact path={path}>
-          <h1>Roast Root</h1>
-        </Route>
+        <Route exact path={path} component={AllRoasts} />
         <Route path={`${path}/add`}>
           <h1>Add Roast</h1>
         </Route>
