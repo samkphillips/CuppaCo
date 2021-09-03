@@ -17,7 +17,6 @@ const AllRoasts = () => {
 
   return (
       <div>
-        <h2>Roasts</h2>
         <div className='roast-container'>
           {roasts.map((roast) => (
             <RoastCard 
