@@ -1,12 +1,10 @@
 import React from 'react'
+import RoastNav from '../components/RoastNav'
 
 const Roasts = () => {
   return (
     <div className='roasts-page'>
-      <div className='roasts-sidebar'>
-        <p>Link 1</p>
-        <p>Link 2</p>
-      </div>
+      <RoastNav />
       <div className='roasts-container'>
         {/* roast cards live here */}
         <h1>Roasts!!!</h1>
