@@ -22,8 +22,16 @@ const RoastDetail = (props) => {
   }, [])
 
   return roast ? (
-      <div>
-        <h1>{roast.roastName}</h1>
+      <div className='roast-details'>
+        <h1>{`${roast.roaster} ${roast.roastName}`}</h1>
+        <h3>{`Origin: ${roast.beanOrigin}`}</h3>
+        <h3>{`Bean Type: ${roast.beanType}`}</h3>
+        {roast.roastColor === 1 && <h3>{`Roast Color: Green`}</h3>}
+        {roast.roastColor === 2 && <h3>{`Roast Color: Blonde`}</h3>}
+        {roast.roastColor === 3 && <h3>{`Roast Color: Medium`}</h3>}
+        {roast.roastColor === 4 && <h3>{`Roast Color: Dark`}</h3>}
+        {roast.roastColor === 5 && <h3>{`Roast Color: Very Dark`}</h3>}
+        <hr />
         <div>
           {brews.map((brew) => (
             <p>Brew!!</p>

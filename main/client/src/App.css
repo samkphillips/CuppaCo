@@ -14,6 +14,12 @@ header {
   color: #ead4bc;
 }
 
+hr {
+  color: #865f3f;
+  width: 100%;
+  margin: 15px 0;
+}
+
 .home-page,
 .about-page,
 .shop-page {
@@ -68,6 +74,14 @@ header {
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: center;
+  align-items: center;
+}
+
+.roast-details {
+  width: calc(100vw - 240px);
+  margin: 50px;
+  display: flex;
+  flex-direction: column;
   align-items: center;
 }
 
