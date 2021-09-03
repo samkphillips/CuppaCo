@@ -2,6 +2,7 @@ import React from 'react'
 import { Route, Switch, NavLink, useRouteMatch } from 'react-router-dom'
 import AllRoasts from './subpages/AllRoasts'
 import AddRoast from './subpages/AddRoast'
+import RoastDetail from './subpages/RoastDetail'
 
 const Roasts = () => {
   let { path, url } = useRouteMatch()
@@ -14,8 +15,9 @@ const Roasts = () => {
       </div>
       
       <Switch>
-        <Route exact path={path} component={AllRoasts} />
+        <Route exact path={path} component={(props) => <AllRoasts {...props} />} />
         <Route path={`${path}/add`} component={AddRoast} />
+        <Route path={`${path}/details/:id`} component={(props) => <RoastDetail {...props} />} />
       </Switch>
     </div>
   )

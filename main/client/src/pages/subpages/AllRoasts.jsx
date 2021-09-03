@@ -3,7 +3,7 @@ import RoastCard from '../../components/RoastCard'
 import axios from 'axios'
 import { BASE_URL } from '../../globals'
 
-const AllRoasts = () => {
+const AllRoasts = (props) => {
   const [roasts, setRoasts] = useState([])
 
   const getRoasts = async () => {
@@ -20,6 +20,7 @@ const AllRoasts = () => {
         <div className='roast-container'>
           {roasts.map((roast) => (
             <RoastCard 
+              {...props}
               roastName={roast.roastName} 
               roaster={roast.roaster} 
               beanOrigin={roast.beanOrigin} 

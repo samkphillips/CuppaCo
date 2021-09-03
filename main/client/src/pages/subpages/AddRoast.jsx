@@ -47,7 +47,7 @@ function AddRoast() {
         <input name="beanType" id='beanTypeI' />
         <label for='roastColorI'>Roast Color:</label>
         <input name="roastColor" id="roastColorI" type="Number" min="1" max="5" placeholder="3" />
-        <br></br>
+        
         <div>
           <button type="submit">Submit</button>
         </div>

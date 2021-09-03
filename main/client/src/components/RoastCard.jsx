@@ -3,7 +3,7 @@ import React from 'react'
 const RoastCard = (props) => {
   const handleClick = () => {
     console.log(`Clicked ${props.roastID}`)
-    //gonna add logic here to move to roast detail page but have some other stuff to addddd
+    props.history.push(`roasts/details/${props.roastID}`)
   }
   
   return (
