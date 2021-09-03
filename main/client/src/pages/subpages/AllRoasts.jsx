@@ -20,7 +20,14 @@ const AllRoasts = () => {
         <h2>Roasts</h2>
         <div>
           {roasts.map((roast) => (
-            <RoastCard />
+            <RoastCard 
+              roastName={roast.roastName} 
+              roaster={roast.roaster} 
+              beanOrigin={roast.beanOrigin} 
+              beanType={roast.beanType} 
+              roastColor={roast.roastColor} 
+              roastID={roast._id}
+            />
           ))}
         </div>
       </div>
