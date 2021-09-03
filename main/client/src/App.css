@@ -40,6 +40,8 @@ hr {
   width: 60%;
   min-width: 400px;
   text-align: center;
+  background-color: #604133;
+  color: #ead4bc;
   border: 1px solid #604133;
   padding: 10px;
   border-radius: 10px;
@@ -48,6 +50,7 @@ hr {
 .shop-page > p {
   border: 3px solid #9ea6a2;
   background-color: #b6dcdc;
+  color: #604133;
 }
 
 .roasts-page {
