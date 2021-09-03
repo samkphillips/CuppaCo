@@ -8,6 +8,8 @@ router.get('/roasts', controllers.getAllRoasts)
 
 router.get('/brews', controllers.getAllBrews)
 
+router.get('/roasts/:id', controllers.getRoastByID)
+
 router.get('/brews/:id', controllers.getBrewsByRoastID)
 
 router.post('/roasts', controllers.addRoast)

@@ -18,6 +18,15 @@ const getAllBrews = async (req, res) => {
   }
 }
 
+const getRoastByID = async (req, res) => {
+  try {
+    let o = await Roast.find({ _id: req.params.id })
+    return res.status(200).json({ o })
+  } catch (error) {
+    return res.status(500).send(error.message)
+  }
+}
+
 const getBrewsByRoastID = async (req, res) => {
   try {
     let outputBrews = await Brew.find({ roastID: req.params.id })
@@ -77,6 +86,7 @@ const deleteBrew = async (req, res) => {
 module.exports = {
   getAllRoasts,
   getAllBrews,
+  getRoastByID,
   getBrewsByRoastID,
   addRoast,
   addBrew,
