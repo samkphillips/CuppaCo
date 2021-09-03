@@ -47,6 +47,9 @@ const RoastDetail = (props) => {
             />
           ))}
         </div>
+        <button onClick={() => {
+          props.history.push(`/roasts/addbrew/${roast._id}`)
+        }}>Add your Brew</button>
       </div>
   ) : null
 }

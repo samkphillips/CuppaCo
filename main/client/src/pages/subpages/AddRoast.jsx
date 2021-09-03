@@ -2,14 +2,14 @@ import React from 'react'
 import axios from 'axios'
 import { BASE_URL } from '../../globals'
 
-function AddRoast() {
+function AddRoast(props) {
   const parseForm = (e) => {
     return {
       roastName: e.target[0].value,
       roaster: e.target[1].value,
       beanOrigin: e.target[2].value,
       beanType: e.target[3].value,
-      roastColor: Number(e.target[4].value)
+      roastColor: Number(e.target[4].value) || 3
     }
   }
 
@@ -26,6 +26,7 @@ function AddRoast() {
       .then(function (response) {
         alert(`Thank you for your submission`)
         console.log(response)
+        props.history.push(`/roasts`)
       })
       .catch(function (response) {
         alert(`Submission unsuccessful.`)
@@ -45,7 +46,7 @@ function AddRoast() {
         <input name="beanOrigin" id='beanOriginI' />
         <label for='beanTypeI'>Bean Type:</label>
         <input name="beanType" id='beanTypeI' />
-        <label for='roastColorI'>Roast Color:</label>
+        <label for='roastColorI'>Roast Color (1-5):</label>
         <input name="roastColor" id="roastColorI" type="Number" min="1" max="5" placeholder="3" />
         
         <div>
