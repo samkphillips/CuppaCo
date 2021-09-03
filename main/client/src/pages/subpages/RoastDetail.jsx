@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react'
+import BrewCard from '../../components/BrewCard'
 import axios from 'axios'
 import { BASE_URL } from '../../globals'
 
@@ -34,7 +35,16 @@ const RoastDetail = (props) => {
         <hr />
         <div>
           {brews.map((brew) => (
-            <p>Brew!!</p>
+            <BrewCard 
+              authorName={brew.authorName} 
+              date={brew.date} 
+              drankAt={brew.drankAt} 
+              brewMethod={brew.brewMethod} 
+              preppedWith={brew.preppedWith} 
+              aromaNotes={brew.aromaNotes} 
+              flavorNotes={brew.flavorNotes} 
+              rating={brew.rating} 
+            />
           ))}
         </div>
       </div>
