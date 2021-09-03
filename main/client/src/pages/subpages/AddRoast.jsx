@@ -24,7 +24,6 @@ function AddRoast(props) {
       headers: { 'Content-Type': 'application/json' }
     })
       .then(function (response) {
-        alert(`Thank you for your submission`)
         console.log(response)
         props.history.push(`/roasts`)
       })
