@@ -44,6 +44,40 @@ header {
   background-color: #b6dcdc;
 }
 
+.roasts-page {
+  height: calc(100vh - 70px);
+  min-height: 500px;
+  width: 100vw;
+  background-color: #ead4bc;
+  color: #604133;
+}
+
+.roast-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.roast-card {
+  width: 200px;
+  height: 200px;
+  margin: 20px;
+  background-color: #f3f6f6;
+  color: #604133;
+  border: 3px solid #604133;
+  padding: 10px;
+  border-radius: 10px;
+  text-align: center;
+}
+
+.roast-card:hover {
+  border-color: #b6dcdc;
+  box-shadow: 0 0 10px #9ea6a2;
+  cursor: pointer;
+}
+
 .navlinks {
   margin: 10px;
   text-decoration: none;
