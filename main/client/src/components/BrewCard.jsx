@@ -1,9 +1,10 @@
 import React from 'react'
 
 const BrewCard = (props) => {
+  const date = new Date(props.date)
   return (
     <div className='brew-card'>
-      <h4>{props.date}</h4>
+      <h4>{date.toDateString()}</h4>
       <h3>{props.authorName} wrote:</h3>
       <h5>Brew Method: {props.brewMethod}</h5>
       <h5>Prepared with: {props.preppedWith}</h5>

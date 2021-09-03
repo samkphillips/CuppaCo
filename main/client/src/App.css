@@ -104,6 +104,16 @@ hr {
   cursor: pointer;
 }
 
+.brew-card {
+  width: 100%;
+  background-color: #f3f6f6;
+  color: #604133;
+  border: 3px solid #604133;
+  padding: 10px;
+  border-radius: 10px;
+  margin: 20px 0;
+}
+
 .add-roast {
   padding: 50px 0;
   width: 500px;
@@ -120,6 +130,16 @@ hr {
 
 button {
   margin: 10px;
+  background-color: #b6dcdc;
+  border: 2px solid #9ea6a2;
+  border-radius: 5px;
+  padding: 3px;
+}
+
+button:hover {
+  background-color: #9ea6a2;
+  color: white;
+  cursor: pointer;
 }
 
 .navlinks {
