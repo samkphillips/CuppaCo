@@ -1,6 +1,13 @@
 import React from 'react'
+import axios from 'axios'
+import { BASE_URL } from '../globals'
 
 const BrewCard = (props) => {
+  const deleteMe = async () => {
+    const res = await axios.delete(`${BASE_URL}/brews/${props.id}`)
+    props.history.push(`/roasts/details/${props.roastID}`)
+  }
+
   const date = new Date(props.date)
   return (
     <div className='brew-card'>
@@ -11,6 +18,7 @@ const BrewCard = (props) => {
       <h4>Aroma: {props.aromaNotes}</h4>
       <h4>Flavor: {props.flavorNotes}</h4>
       <h3>Rating: {props.rating}</h3>
+      <button onClick={deleteMe}>Delete Brew</button>
     </div>
   )
 }

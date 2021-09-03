@@ -17,6 +17,11 @@ const RoastDetail = (props) => {
     setBrews(res.data.outputBrews)
   }
 
+  const deleteMe = async () => {
+    const res = await axios.delete(`${BASE_URL}/roasts/${roast._id}`)
+    props.history.push(`/roasts`)
+  }
+
   useEffect(() => {
     getRoast()
     getBrews()
@@ -32,10 +37,12 @@ const RoastDetail = (props) => {
         {roast.roastColor === 3 && <h3>{`Roast Color: Medium`}</h3>}
         {roast.roastColor === 4 && <h3>{`Roast Color: Dark`}</h3>}
         {roast.roastColor === 5 && <h3>{`Roast Color: Very Dark`}</h3>}
+        <button onClick={deleteMe}>Delete Roast</button>
         <hr />
         <div>
           {brews.map((brew) => (
             <BrewCard 
+              {...props}
               authorName={brew.authorName} 
               date={brew.date} 
               drankAt={brew.drankAt} 
@@ -44,6 +51,8 @@ const RoastDetail = (props) => {
               aromaNotes={brew.aromaNotes} 
               flavorNotes={brew.flavorNotes} 
               rating={brew.rating} 
+              id={brew._id}
+              roastID={brew.roastID}
             />
           ))}
         </div>
