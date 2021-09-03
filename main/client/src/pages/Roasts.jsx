@@ -1,6 +1,5 @@
 import React from 'react'
 import { Route, Switch, NavLink, useRouteMatch } from 'react-router-dom'
-import RoastNav from '../components/RoastNav'
 import AllRoasts from './subpages/AllRoasts'
 
 const Roasts = () => {
