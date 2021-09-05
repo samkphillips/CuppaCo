@@ -37,16 +37,16 @@ function AddRoast(props) {
     <div className='add-roast'>
       <h1>Submit Your Roast</h1>
       <form className='form-container' onSubmit={handleSubmit}>
-        <label for='roastI'>Roast Name:</label>
-        <input name="roastName" id='roastI' />
-        <label for='roasterI'>Roaster Name:</label>
-        <input name="roaster" id='roasterI' />
-        <label for='beanOriginI'>Bean Origin:</label>
-        <input name="beanOrigin" id='beanOriginI' />
-        <label for='beanTypeI'>Bean Type:</label>
-        <input name="beanType" id='beanTypeI' />
-        <label for='roastColorI'>Roast Color (1-5):</label>
-        <input name="roastColor" id="roastColorI" type="Number" min="1" max="5" placeholder="3" />
+        <label>Roast Name:</label>
+        <input name="roastName" />
+        <label>Roaster Name:</label>
+        <input name="roaster" />
+        <label>Bean Origin:</label>
+        <input name="beanOrigin" />
+        <label>Bean Type:</label>
+        <input name="beanType" />
+        <label>Roast Color (1-5):</label>
+        <input name="roastColor" type="Number" min="1" max="5" placeholder="3" />
         
         <div>
           <button type="submit">Submit</button>

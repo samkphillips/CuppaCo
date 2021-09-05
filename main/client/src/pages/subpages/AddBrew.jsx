@@ -41,20 +41,20 @@ function AddBrew(props) {
     <div className='add-roast'>
       <h1>Submit Your Brew</h1>
       <form className='form-container' onSubmit={handleSubmit}>
-        <label for='authorI'>Your Name:</label>
-        <input name="authorName" id='authorI' />
-        <label for='localeI'>Drank At:</label>
-        <input name="drankAt" id='localeI' />
-        <label for='methodI'>Brew Method:</label>
-        <input name="brewMethod" id='methodI' />
-        <label for='prepI'>Prepared With:</label>
-        <input name="preppedWith" id='prepI' />
-        <label for='aromaI'>Aroma Notes:</label>
-        <input name="aromaNotes" id='aromaI' />
-        <label for='flavorI'>Flavor Notes:</label>
-        <input name="flavorNotes" id='flavorI' />
-        <label for='rateI'>Rating (1-10):</label>
-        <input name="rating" id="rateI" type="Number" min="1" max="10" placeholder="10" />
+        <label>Your Name:</label>
+        <input name="authorName" />
+        <label>Drank At:</label>
+        <input name="drankAt" />
+        <label>Brew Method:</label>
+        <input name="brewMethod" />
+        <label>Prepared With:</label>
+        <input name="preppedWith" />
+        <label>Aroma Notes:</label>
+        <input name="aromaNotes" />
+        <label>Flavor Notes:</label>
+        <input name="flavorNotes" />
+        <label>Rating (1-10):</label>
+        <input name="rating" type="Number" min="1" max="10" placeholder="10" />
         
         <div>
           <button type="submit">Submit</button>

@@ -4,7 +4,7 @@ import { BASE_URL } from '../globals'
 
 const BrewCard = (props) => {
   const deleteMe = async () => {
-    const res = await axios.delete(`${BASE_URL}/brews/${props.id}`)
+    await axios.delete(`${BASE_URL}/brews/${props.id}`)
     props.history.push(`/roasts/details/${props.roastID}`)
   }
 

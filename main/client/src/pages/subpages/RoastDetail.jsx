@@ -18,13 +18,14 @@ const RoastDetail = (props) => {
   }
 
   const deleteMe = async () => {
-    const res = await axios.delete(`${BASE_URL}/roasts/${roast._id}`)
+    await axios.delete(`${BASE_URL}/roasts/${roast._id}`)
     props.history.push(`/roasts`)
   }
 
   useEffect(() => {
     getRoast()
     getBrews()
+    // eslint-disable-next-line
   }, [])
 
   return roast ? (
@@ -43,6 +44,7 @@ const RoastDetail = (props) => {
           {brews.map((brew) => (
             <BrewCard 
               {...props}
+              key={`${brew.authorName}-${brew.date}-${brew._id}`}
               authorName={brew.authorName} 
               date={brew.date} 
               drankAt={brew.drankAt} 

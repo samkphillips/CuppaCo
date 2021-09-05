@@ -2,7 +2,6 @@ import React from 'react'
 
 const RoastCard = (props) => {
   const handleClick = () => {
-    console.log(`Clicked ${props.roastID}`)
     props.history.push(`roasts/details/${props.roastID}`)
   }
   

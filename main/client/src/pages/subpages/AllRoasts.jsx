@@ -21,6 +21,7 @@ const AllRoasts = (props) => {
           {roasts.map((roast) => (
             <RoastCard 
               {...props}
+              key={`${roast.roaster}-${roast.roastName}`}
               roastName={roast.roastName} 
               roaster={roast.roaster} 
               beanOrigin={roast.beanOrigin} 
