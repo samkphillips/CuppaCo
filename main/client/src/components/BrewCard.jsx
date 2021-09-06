@@ -14,6 +14,7 @@ const BrewCard = (props) => {
       <h4>{date.toDateString()}</h4>
       <h3>{props.authorName} wrote:</h3>
       <h5>Brew Method: {props.brewMethod}</h5>
+      <h5>Drank At: {props.drankAt}</h5>
       <h5>Prepared with: {props.preppedWith}</h5>
       <h4>Aroma: {props.aromaNotes}</h4>
       <h4>Flavor: {props.flavorNotes}</h4>
