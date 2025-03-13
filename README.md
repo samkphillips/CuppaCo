@@ -24,14 +24,14 @@ Cuppa Co is a coffee review and journaling site. Users can add their favorite ro
 - Node
 - MongoDB
 - Express
-- Heroku
+- Railway
 - Several different coffee brewing methods
 
 ---
 
 **_Getting Started_**
 
-Head to [Cuppa Co](https://peaceful-tor-59169.herokuapp.com/) and click "Roasts" to get started. Add your favorite coffee and contribute a review!
+Head to [Cuppa Co](https://cuppaco-production.up.railway.app/) and click "Roasts" to get started. Add your favorite coffee and contribute a review!
 
 ---
 
